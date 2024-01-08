@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Apology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f2f2f2; /* Light grey background color */
+            color: #333; /* Darker text color for better visibility */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #2980b9; /* Darker blue header */
+            color: #fff;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            filter: grayscale(70%) sepia(90%) brightness(80%) contrast(80%) saturate(150%);
+        }
+
+        h2 {
+            color: #2980b9; /* Darker blue heading color */
+            font-family: 'Verdana', sans-serif;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif; /* Change the font to Georgia for the apology letter */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #2980b9; /* Darker blue footer */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Background color behind the apology letter */
+        section:nth-child(2) {
+            background-color: #ecf0f1; /* Light grey background color */
+        }
+
+        /* Style for the forgive button */
+        button {
+            padding: 20px 40px; /* Increased padding for a bigger button */
+            font-size: 18px; /* Increased font size */
+            background-color: #2ecc71; /* Green button color */
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Style to make the happy cat gif take the whole screen width */
+        #customCat {
+            width: 100vw;
+            max-width: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Oops, I messed up!</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to my Apology Website</h2>
+        <img src="https://i.imgur.com/ICnsWMR.gif" alt="Sad Cat">
+        <p>Sometimes saying sorry is hard. That's why I made this website!</p>
+    </section>
+
+    <section>
+        <h2>Apology Letter</h2>
+        <p>Dear Khalid,</p>
+        <p>In the realm of apologies, where words meet regret,</p>
+        <p>I weave a verse, a poetic duet.</p>
+        <p>Stress, a typo in life's grand play,</p>
+        <p>A moment misspelled, causing dismay.</p>
+        <p>Yet let this poem be a sweet serenade,</p>
+        <p>To mend the rift my mistake has made.</p>
+        <p>With love as the ink, forgiveness the quill,</p>
+        <p>Our story continues, as it always will.</p>
+        <p>Sorry for the stress, my dear Khalid,</p>
+        <p>In the poetry of life, let love be our ballad.</p>
+    </section>
+
+    <!-- Forgive button and custom cat gif -->
+    <button id="forgiveButton" onclick="forgive()">I Forgive You</button>
+    <img src="https://media1.tenor.com/m/ZXBks2QSfdgAAAAd/cats-kittens.gif" alt="Custom Cat" id="customCat">
+
+    <!-- Add more sections for different content -->
+
+    <footer>
+        <p>Thank you for visiting my Apology Website. &copy; 2024</p>
+    </footer>
+
+    <script>
+        function forgive() {
+            document.getElementById("customCat").style.display = "block";
+            // Scroll down to the custom cat section
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
